@@ -1,0 +1,553 @@
+[
+    {
+        "id": "8d2487fcbd5ec339",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2bc52c51.dbbb94",
+        "type": "mqtt-broker",
+        "name": "mqtt_local",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9beb301a.3454e8",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "database-1.coy8cnnhi8yy.us-east-1.rds.amazonaws.com",
+        "port": "3306",
+        "db": "sensor",
+        "tz": "hh:mm",
+        "charset": "UTF8"
+    },
+    {
+        "id": "f484a0a.6c67a6",
+        "type": "ui_tab",
+        "name": "FreeRtos",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "33054138.0561a6",
+        "type": "ui_group",
+        "name": "Gráficos",
+        "tab": "f484a0a.6c67a6",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "71b0bf5d.a9952",
+        "type": "ui_group",
+        "name": "Sensor",
+        "tab": "f484a0a.6c67a6",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2f8785b3.58da42",
+        "type": "ui_group",
+        "name": "LEDs",
+        "tab": "f484a0a.6c67a6",
+        "order": 3,
+        "disp": true,
+        "width": 3,
+        "collapse": false
+    },
+    {
+        "id": "53bb7f4e.37d0d",
+        "type": "ui_group",
+        "name": "grafico_mysql",
+        "tab": "f484a0a.6c67a6",
+        "order": 4,
+        "disp": true,
+        "width": "18",
+        "collapse": false
+    },
+    {
+        "id": "f35a9f87.c270e8",
+        "type": "ui_group",
+        "name": "Tabela mysql",
+        "tab": "f484a0a.6c67a6",
+        "order": 5,
+        "disp": true,
+        "width": 11,
+        "collapse": false
+    },
+    {
+        "id": "88b7ccadac3d97f8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "ddanilo.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7b476776b60888c7",
+        "type": "ui_group",
+        "name": "Group 6",
+        "tab": "f484a0a.6c67a6",
+        "order": 6,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "57c9419d60e89c02",
+        "type": "ui_tab",
+        "name": "Medidores do tanque",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7e6e4988f1fbd018",
+        "type": "ui_group",
+        "name": "Medidor do tanque",
+        "tab": "57c9419d60e89c02",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": "",
+        "info": "oi"
+    },
+    {
+        "id": "9094aefb3bd2e166",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "57c9419d60e89c02",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "aa44f99992f73ae8",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "57c9419d60e89c02",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "6c214fa206097a1b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#bb00ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#c6109f",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#c6109f",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#c6109f",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ef34c7",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#c6109f",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 100,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "8f82357d1f045aee",
+        "type": "mqtt in",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "topic": "Sensores",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "88b7ccadac3d97f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 180,
+        "wires": [
+            [
+                "39553e9f1d4a74b7"
+            ]
+        ]
+    },
+    {
+        "id": "39553e9f1d4a74b7",
+        "type": "json",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "89e58eb01611b0e3"
+            ]
+        ]
+    },
+    {
+        "id": "89e58eb01611b0e3",
+        "type": "function",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "func": "var water =   msg.payload.water ;\nvar tdsValue =   msg.payload.tdsValue;\n\nmsg.topic = \"INSERT INTO tabela (water,tdsValue) VALUES (\"+water+\",\"+tdsValue+\" );\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "d40bec40fbbec13f"
+            ]
+        ]
+    },
+    {
+        "id": "d40bec40fbbec13f",
+        "type": "mysql",
+        "z": "8d2487fcbd5ec339",
+        "mydb": "9beb301a.3454e8",
+        "name": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c55b8ef88216847",
+        "type": "ui_chart",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "group": "7e6e4988f1fbd018",
+        "order": 1,
+        "width": 8,
+        "height": 7,
+        "label": "Ppm",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "20",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#a512af",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#8531d3",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 730,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03073ba603a1e6ac",
+        "type": "ui_gauge",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "group": "7e6e4988f1fbd018",
+        "order": 2,
+        "width": 4,
+        "height": 7,
+        "gtype": "wave",
+        "title": "gauge",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 730,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "fcb160cd9b051349",
+        "type": "inject",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "be9101b40240cc56"
+            ]
+        ]
+    },
+    {
+        "id": "be9101b40240cc56",
+        "type": "function",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "func": "msg.payload = true;\nmsg.topic = \"SELECT * FROM tabela order by timeStamp DESC limit 1\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "4f52835edd764b1e"
+            ]
+        ]
+    },
+    {
+        "id": "4f52835edd764b1e",
+        "type": "mysql",
+        "z": "8d2487fcbd5ec339",
+        "mydb": "9beb301a.3454e8",
+        "name": "",
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "21c2377eaa75c8aa",
+                "30a46ca8c80deda0"
+            ]
+        ]
+    },
+    {
+        "id": "21c2377eaa75c8aa",
+        "type": "function",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "func": "msg.payload = msg.payload[0].water;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 260,
+        "wires": [
+            [
+                "03073ba603a1e6ac",
+                "27d113c94d3ac73c"
+            ]
+        ]
+    },
+    {
+        "id": "30a46ca8c80deda0",
+        "type": "function",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "func": "msg.payload = msg.payload[0].tdsValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 340,
+        "wires": [
+            [
+                "8c55b8ef88216847",
+                "0c35322a529c3bbc"
+            ]
+        ]
+    },
+    {
+        "id": "27d113c94d3ac73c",
+        "type": "debug",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0c35322a529c3bbc",
+        "type": "debug",
+        "z": "8d2487fcbd5ec339",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 400,
+        "wires": []
+    }
+]
